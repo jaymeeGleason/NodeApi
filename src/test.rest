@@ -1,0 +1,18 @@
+###
+GET http://localhost:3000
+###
+
+###
+GET http://localhost:3000/setup
+###
+
+
+###
+POST http://localhost:3000
+Content-Type: application/json
+
+{
+    "firstName": "Jamie",
+    "lastName": "Gleason"
+}
+###
