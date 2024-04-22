@@ -8,19 +8,20 @@ const port = process.env.PORT;
 const pool = require('./db');
 
 //routes
-app.get('/getPersonas', async(req, res) => {
+app.get('/personas', async(req, res) => {
     try {
-        const data = await pool.query('SELECT * FROM persona');
-        res.status(200).send( data.rows);
+        const data = await pool.query("SELECT * FROM persona");
+        console.log(data);
+        res.status(200).send(data);
     } catch (err) {
         console.log(err);
         res.sendStatus(500);
     }});
 
-app.post('/createPersona', async(req, res) => {
+app.post('/persona', async(req, res) => {
     const {firstName, lastName, latitude, longitude} = req.body;
     try {
-        await pool.query(`INSERT INTO persona (first_name, last_name, latitude, longitude) VALUES ('Lisa', 'Young', 123.45678, 234.34567)`);
+        await pool.query("INSERT INTO persona (first_name, last_name, latitude, longitude) VALUES ($1, $2, $3, $4)", [firstName, lastName, latitude, longitude]);
         res.status(200).send({message: "Successfully added persona"});
     } catch (err) {
         console.log(err);

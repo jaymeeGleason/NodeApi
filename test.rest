@@ -7,8 +7,8 @@ POST http://localhost:3000/createPersona
 Content-Type: application/json
 
 {
-    "firstName": "Jamie",
-    "lastName": "Gleason",
+    "firstName": "Tina",
+    "lastName": "Young",
     "latitude": 2.0365,
     "longitude": 1.0365
 }
