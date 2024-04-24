@@ -3,13 +3,87 @@ GET http://localhost:3000/personas
 ###
 
 ###
-POST http://localhost:3000/createPersona
+GET http://localhost:3000/weather
+###
+
+###
+POST http://localhost:3000/profile
 Content-Type: application/json
 
 {
+    "firstName": "James",
+    "lastName": "Tung"
+}
+###
+
+###
+POST http://localhost:3000/profile
+Content-Type: application/json
+
+{
+    "firstName": "Liza",
+    "lastName": "Rena"
+}
+###
+
+###
+POST http://localhost:3000/persona
+Content-Type: application/json
+
+{
+    "profileId": 1,
+    "firstName": "Lori",
+    "lastName": "Fancy",
+    "latitude": 2.0365,
+    "longitude": 1.0365,
+    "interests": "riding horses, reading"
+}
+###
+
+###
+POST http://localhost:3000/persona
+Content-Type: application/json
+
+{
+    "profileId": 1,
     "firstName": "Tina",
     "lastName": "Young",
     "latitude": 2.0365,
-    "longitude": 1.0365
+    "longitude": 1.0365,
+    "interests": "riding horses, reading"
+}
+###
+
+###
+POST http://localhost:3000/persona
+Content-Type: application/json
+
+{
+    "profileId": 2,
+    "firstName": "Jamie",
+    "lastName": "Gleason",
+    "latitude": 42.03656,
+    "longitude": 61.03658,
+    "interests": "reading, programming"
+}
+###
+
+###
+POST http://localhost:3000/product
+Content-Type: application/json
+
+{
+    "personaId": 2,
+    "description": "super secret widget"
+}
+###
+
+###
+POST http://localhost:3000/product
+Content-Type: application/json
+
+{
+    "personaId": 1,
+    "description": "random widget"
 }
 ###
