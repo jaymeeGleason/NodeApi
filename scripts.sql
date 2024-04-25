@@ -18,16 +18,16 @@ CREATE TABLE persona(
     longitude DECIMAL(9,6),
     interests VARCHAR(1000),
     CONSTRAINT pk_persona PRIMARY KEY(id),
-    CONSTRAINT fk_profile FOREIGN KEY (profile_id) REFERENCES profile(id),
+    CONSTRAINT fk_profile FOREIGN KEY (profile_id) REFERENCES profile(id)
 
 );
 
 CREATE TABLE product(
     id INTEGER NOT NULL DEFAULT nextval('product_seq'),
     persona_id INTEGER NOT NULL,
-    description VARCHAR(500)
+    description VARCHAR(500),
     CONSTRAINT pk_product PRIMARY KEY(id),
-    CONSTRAINT fk_persona FOREIGN KEY (persona_id) REFERENCES persona(id),
+    CONSTRAINT fk_persona FOREIGN KEY (persona_id) REFERENCES persona(id)
 );
 
 -- DROP TABLE persona;

@@ -3,6 +3,10 @@ GET http://localhost:3000/personas
 ###
 
 ###
+GET http://localhost:3000/personas/2
+###
+
+###
 GET http://localhost:3000/weather
 ###
 
@@ -34,8 +38,8 @@ Content-Type: application/json
     "profileId": 1,
     "firstName": "Lori",
     "lastName": "Fancy",
-    "latitude": 2.0365,
-    "longitude": 1.0365,
+    "latitude": 38.8894,
+    "longitude": -77.0352,
     "interests": "riding horses, reading"
 }
 ###
@@ -48,8 +52,8 @@ Content-Type: application/json
     "profileId": 1,
     "firstName": "Tina",
     "lastName": "Young",
-    "latitude": 2.0365,
-    "longitude": 1.0365,
+    "latitude": 40.7128,
+    "longitude": 74.0060,
     "interests": "riding horses, reading"
 }
 ###
@@ -62,8 +66,8 @@ Content-Type: application/json
     "profileId": 2,
     "firstName": "Jamie",
     "lastName": "Gleason",
-    "latitude": 42.03656,
-    "longitude": 61.03658,
+    "latitude": 40.7128,
+    "longitude": 74.0060,
     "interests": "reading, programming"
 }
 ###
