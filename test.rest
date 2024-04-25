@@ -1,14 +1,4 @@
-###
-GET http://localhost:3000/personas
-###
 
-###
-GET http://localhost:3000/personas/2
-###
-
-###
-GET http://localhost:3000/weather
-###
 
 ###
 POST http://localhost:3000/profile
@@ -90,4 +80,16 @@ Content-Type: application/json
     "personaId": 1,
     "description": "random widget"
 }
+###
+
+###
+GET http://localhost:3000/personas
+###
+
+###
+GET http://localhost:3000/personas/2
+###
+
+###
+GET http://localhost:3000/weather
 ###
